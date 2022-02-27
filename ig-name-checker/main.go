@@ -104,6 +104,11 @@ func checkUsernameChannel(username string, c chan string) {
 	if res, err := http.Get(igUser); err != nil {
 		c <- fmt.Sprintf("IG username %s does not exist \n", username)
 	} else {
-		c <- fmt.Sprintf("[%d] IG username %s exists", res.StatusCode, username)
+		if res.StatusCode == 404 {
+			c <- fmt.Sprintf("IG username %s does not exist \n", username)
+		} else {
+			c <- fmt.Sprintf("[%d] IG username %s exists", res.StatusCode, username)
+		}
+
 	}
 }
