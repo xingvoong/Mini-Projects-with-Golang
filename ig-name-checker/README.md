@@ -33,25 +33,26 @@ No concurrency
 [200] IG username barackobama exists 
 [200] IG username MichelleObama exists 
 [200] IG username elonmusk exists 
-[200] IG username 12fdfvscc. exists 
+IG username 12fdfvscc. does not exist 
 IG username xinvoongacxczxccxxc  12e3e does not exist 
-1.8343092s
+3.838212838s
 
 Wait Group
 IG username xinvoongacxczxccxxc  12e3e does not exist 
-[200] IG username elonmusk exists 
-[200] IG username 12fdfvscc. exists 
-[200] IG username MichelleObama exists 
+IG username 12fdfvscc. does not exist 
 [200] IG username barackobama exists 
-411.925085ms
+[200] IG username elonmusk exists 
+[200] IG username MichelleObama exists 
+1.210572362s
 
 Channel
-[404] IG username xinvoongacxczxccxxc  12e3e exists
-[200] IG username barackobama exists
-[200] IG username 12fdfvscc. exists
+IG username xinvoongacxczxccxxc  12e3e does not exist 
+
 [200] IG username elonmusk exists
 [200] IG username MichelleObama exists
-454.220754ms
+[200] IG username barackobama exists
+[200] IG username 12fdfvscc. exists
+473.985011ms
 ```
 ## Requirements
 - Golang installed
